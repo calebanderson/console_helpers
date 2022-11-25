@@ -1,13 +1,22 @@
 AllCops:
   TargetRubyVersion: 2.6
 
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
+Rails/ContentTag:
+  Enabled: false
 
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
+# With the caveat that devs go to Preferences > Editor > General > On Save, and apply the rule of
+# Remove trailing spaces on all lines.
+Layout/TrailingWhitespace:
+  Enabled: false
 
-Layout/LineLength:
-  Max: 120
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
+NumericPredicate:
+  Enabled: false
+
+Style/WordArray:
+  EnforcedStyle: brackets
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
