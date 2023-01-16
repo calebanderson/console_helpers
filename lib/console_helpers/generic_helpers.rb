@@ -17,16 +17,6 @@ module ConsoleHelpers
       nil
     end
 
-    def print_file_link(*file_and_line)
-      file, line = ConsoleHelpers::GenericHelpers.sanitize_for_link(file_and_line)
-      return if file.blank?
-
-      print [file, line].compact.join(':')
-      print ' | ', URI::Generic.build(scheme: 'file', path: URI::DEFAULT_PARSER.escape(file)) if file.include?(' ')
-      print "\n"
-      true
-    end
-
     def with_log_level(level)
       orig = Rails.logger.level
       Rails.logger.level = level
@@ -44,20 +34,6 @@ module ConsoleHelpers
 
     delegate :toggle_logging, to: :'ConsoleHelpers::GenericHelpers'
 
-    def self.sanitize_for_link(*file_and_line)
-      file, line = file_and_line.flatten.map(&:to_s).map(&:dup) # Need to #dup since String#to_s returns self, not a dup
-      return [] if file.blank?
-
-      line&.remove!(/\D/) # Remove non-digits
-      [linkable_fullpath(file), line.presence]
-    end
-
-    # Because Rubymine console links don't work if they contain spaces, this looks for existing
-    # paths to the same file without spaces via symlinks or hidden symlinks.
-    def self.linkable_fullpath(fullpath)
-      Dir.glob(fullpath.gsub(File::SEPARATOR, '\\0{.,}').remove(' '), File::FNM_DOTMATCH).first || fullpath
-    end
-
     # Found out #require_or_load is able to take relative paths... this might be moot
     # Likely not moot. #require_or_load can't re-load files.
     def load_relative(relative_path, extension: '.rb')
@@ -72,5 +48,4 @@ module ConsoleHelpers
   end
 
   include GenericHelpers
-  module_function(:print_file_link)
 end
