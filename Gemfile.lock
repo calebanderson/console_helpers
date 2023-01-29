@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     console_helpers (0.1.0)
-      method_looker_upper
+      method_explorer
       quick_records
       reloader_hooks
       responsive_console
@@ -10,7 +10,7 @@ PATH
       scrat
       shared_helpers
       svg_analyzer
-    method_looker_upper (0.1.0)
+    method_explorer (0.1.0)
       rails (>= 4.2)
       responsive_console
       shared_helpers

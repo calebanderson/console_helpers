@@ -19,3 +19,6 @@
 [submodule "svg_analyzer"]
 	path = svg_analyzer
 	url = ../svg_analyzer
+[submodule "method_explorer"]
+	path = method_explorer
+	url = ../method_explorer

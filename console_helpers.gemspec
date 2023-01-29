@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   # spec.add_dependency 'rails', '~> 6.1.1'
-  spec.add_dependency 'method_looker_upper'
+  spec.add_dependency 'method_explorer'
   spec.add_dependency 'quick_records'
   spec.add_dependency 'reloader_hooks'
   spec.add_dependency 'responsive_console'

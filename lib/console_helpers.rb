@@ -5,7 +5,7 @@ require 'reloader_hooks'
 require 'responsive_console'
 require 'scrat'
 require 'quick_records'
-require 'method_looker_upper'
+require 'method_explorer'
 require 'console_helpers/engine'
 
 module ConsoleHelpers
