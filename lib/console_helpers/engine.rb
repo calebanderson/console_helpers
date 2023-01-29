@@ -4,7 +4,7 @@ module ConsoleHelpers
 
     config.after_initialize do
       ConsoleHelpers.mount(Object)
-      ConsoleHelpers.mount(TOPLEVEL_BINDING.receiver)
+      ConsoleHelpers.mount(irb_main) if console?
 
       # ReloaderHooks.register(prepend: true) do
       #   ConsoleHelpers.reload

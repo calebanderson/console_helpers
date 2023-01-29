@@ -4,6 +4,7 @@ PATH
     console_helpers (0.1.0)
       method_explorer
       quick_records
+      rails (>= 4.2)
       reloader_hooks
       responsive_console
       rubymine_version
