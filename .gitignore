@@ -14,3 +14,4 @@
 
 /test/
 /app/
+*.DS_Store
