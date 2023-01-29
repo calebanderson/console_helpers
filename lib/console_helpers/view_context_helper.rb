@@ -21,17 +21,5 @@ module ConsoleHelpers
       opts = { 'HTTP_HOST' => 'localhost:3000' }
       ActionDispatch::TestRequest.try(:create, opts) || ActionDispatch::TestRequest.new(opts)
     end
-
-    module MethodPublication
-      def method_missing(method, *args, &block)
-        respond_to?(method, true) ? __send__(method, *args, &block) : super
-      end
-
-      def respond_to_missing?(method, *)
-        private_methods.include?(method) || protected_methods.include?(method) || super
-      end
-    end
   end
-
-  include ViewContextHelper
 end
