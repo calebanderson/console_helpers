@@ -7,9 +7,6 @@
 [submodule "quick_records"]
 	path = quick_records
 	url = ../quick_records
-[submodule "method_looker_upper"]
-	path = method_looker_upper
-	url = ../method_looker_upper
 [submodule "rubymine_version"]
 	path = rubymine_version
 	url = ../rubymine_version
