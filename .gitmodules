@@ -1,0 +1,24 @@
+[submodule "reloader_hooks"]
+	path = reloader_hooks
+	url = ../reloader_hooks
+[submodule "responsive_console"]
+	path = responsive_console
+	url = ../responsive_console
+[submodule "quick_records"]
+	path = quick_records
+	url = ../quick_records
+[submodule "method_looker_upper"]
+	path = method_looker_upper
+	url = ../method_looker_upper
+[submodule "rubymine_version"]
+	path = rubymine_version
+	url = ../rubymine_version
+[submodule "scrat"]
+	path = scrat
+	url = ../scrat
+[submodule "shared_helpers"]
+	path = shared_helpers
+	url = ../shared_helpers
+[submodule "svg_analyzer"]
+	path = svg_analyzer
+	url = ../svg_analyzer
