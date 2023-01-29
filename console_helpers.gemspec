@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary     = 'Custom helpers for debugging'
   spec.description = 'Custom helpers for debugging'
   spec.license     = 'MIT'
-  spec.required_ruby_version = '2.6.5'
+  # spec.required_ruby_version = '= 2.6.5'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

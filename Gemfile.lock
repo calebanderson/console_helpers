@@ -1,3 +1,76 @@
+GIT
+  remote: https://github.com/calebanderson/reloader_hooks
+  revision: bff13509f14feefa615ff545b7e1faa593bcb5ad
+  specs:
+    reloader_hooks (0.1.0)
+      rails (>= 4.2)
+
+PATH
+  remote: ../centrak_helpers
+  specs:
+    centrak_helpers (0.1.0)
+      rails (>= 4.2)
+      reloader_hooks
+      shared_helpers
+
+PATH
+  remote: ../method_looker_upper
+  specs:
+    method_looker_upper (0.1.0)
+      rails (>= 4.2)
+      responsive_console
+      shared_helpers
+
+PATH
+  remote: ../quick_records
+  specs:
+    quick_records (0.1.0)
+      rails (>= 4.2)
+      responsive_console
+      shared_helpers
+
+PATH
+  remote: ../responsive_console
+  specs:
+    responsive_console (0.1.0)
+      rails (~> 6.1.1)
+
+PATH
+  remote: ../rubymine_version
+  specs:
+    rubymine_version (0.1.0)
+      rails (>= 4.2)
+
+PATH
+  remote: ../scrat
+  specs:
+    scrat (0.1.0)
+      rails (>= 4.2)
+      rubymine_version
+      shared_helpers
+
+PATH
+  remote: ../shared_helpers
+  specs:
+    shared_helpers (0.1.0)
+      rails (>= 4.2)
+
+PATH
+  remote: ../svg_analyzer
+  specs:
+    svg_analyzer (0.1.0)
+      rails (>= 4.2)
+      shared_helpers
+
+PATH
+  remote: ../temperature_helpers
+  specs:
+    temperature_helpers (0.1.0)
+      centrak_helpers
+      rails (>= 4.2)
+      reloader_hooks
+      shared_helpers
+
 PATH
   remote: .
   specs:
@@ -167,10 +240,20 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  centrak_helpers!
   console_helpers!
+  method_looker_upper!
+  quick_records!
+  reloader_hooks!
+  responsive_console!
   rubocop
   rubocop-rails
+  rubymine_version!
+  scrat!
+  shared_helpers!
   sqlite3
+  svg_analyzer!
+  temperature_helpers!
 
 BUNDLED WITH
    1.17.2
