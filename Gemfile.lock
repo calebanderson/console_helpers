@@ -22,7 +22,8 @@ PATH
     reloader_hooks (0.1.0)
       rails (>= 4.2)
     responsive_console (0.1.0)
-      rails (~> 6.1.1)
+      rails (>= 4.2)
+      shared_helpers
     rubymine_version (0.1.0)
       rails (>= 4.2)
     scrat (0.1.0)
