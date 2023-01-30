@@ -1,5 +1,12 @@
-require "console_helpers/version"
-require "console_helpers/engine"
+require 'console_helpers/version'
+require 'shared_helpers'
+require 'rubymine_version'
+require 'reloader_hooks'
+require 'responsive_console'
+require 'scrat'
+require 'quick_records'
+require 'method_explorer'
+require 'console_helpers/engine'
 
 module ConsoleHelpers
   class << self
