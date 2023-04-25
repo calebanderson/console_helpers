@@ -1,5 +1,3 @@
-return unless defined?(Rails)
-
 module ConsoleHelpers
   module ViewContextHelper
     attr_writer :view_context_controller
