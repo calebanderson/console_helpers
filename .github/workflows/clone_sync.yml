@@ -23,7 +23,7 @@ jobs:
     # Update references
     - name: Git Sumbodule Update
       run: |
-        git clone https://github.com/calebanderson/scrat.git /scrat2
+        git clone https://github.com/calebanderson/scrat.git ./scrat2
     - name: Commit update
       run: |
         git config --global user.name 'Git bot'
