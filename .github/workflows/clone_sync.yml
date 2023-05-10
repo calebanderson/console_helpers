@@ -21,7 +21,7 @@ jobs:
         submodules: true
 
     # Update references
-    - name: Git Sumbodule Update
+    - name: Clone repositories
       run: |
         git clone https://github.com/calebanderson/scrat.git ./scrat2
     - name: Commit update
@@ -29,4 +29,5 @@ jobs:
         git config --global user.name 'Git bot'
         git config --global user.email 'bot@noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git add .
         git commit -am "Auto updated 'submodule' references" && git push || echo "No changes to commit"
