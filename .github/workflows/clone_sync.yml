@@ -23,7 +23,22 @@ jobs:
     # Update references
     - name: Clone repositories
       run: |
-        git clone https://github.com/calebanderson/scrat.git ./scrat2
+        git clone https://github.com/calebanderson/method_explorer.git ./method_explorer
+        rm -rf ./method_explorer/.git
+        git clone https://github.com/calebanderson/quick_records.git ./quick_records
+        rm -rf ./quick_records/.git
+        git clone https://github.com/calebanderson/reloader_hooks.git ./reloader_hooks
+        rm -rf ./reloader_hooks/.git
+        git clone https://github.com/calebanderson/responsive_console.git ./responsive_console
+        rm -rf ./responsive_console/.git
+        git clone https://github.com/calebanderson/rubymine_version.git ./rubymine_version
+        rm -rf ./rubymine_version/.git
+        git clone https://github.com/calebanderson/scrat.git ./scrat
+        rm -rf ./scrat/.git
+        git clone https://github.com/calebanderson/shared_helpers.git ./shared_helpers
+        rm -rf ./shared_helpers/.git
+        git clone https://github.com/calebanderson/svg_analyzer.git ./svg_analyzer
+        rm -rf ./svg_analyzer/.git
     - name: Commit update
       run: |
         git config --global user.name 'Git bot'
