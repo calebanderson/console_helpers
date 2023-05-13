@@ -23,20 +23,28 @@ jobs:
     # Update references
     - name: Clone repositories
       run: |
+        rm -rf ./method_explorer
         git clone https://github.com/calebanderson/method_explorer.git ./method_explorer
         rm -rf ./method_explorer/.git
+        rm -rf ./quick_records
         git clone https://github.com/calebanderson/quick_records.git ./quick_records
         rm -rf ./quick_records/.git
+        rm -rf ./reloader_hooks
         git clone https://github.com/calebanderson/reloader_hooks.git ./reloader_hooks
         rm -rf ./reloader_hooks/.git
+        rm -rf ./responsive_console
         git clone https://github.com/calebanderson/responsive_console.git ./responsive_console
         rm -rf ./responsive_console/.git
+        rm -rf ./rubymine_version
         git clone https://github.com/calebanderson/rubymine_version.git ./rubymine_version
         rm -rf ./rubymine_version/.git
+        rm -rf ./scrat
         git clone https://github.com/calebanderson/scrat.git ./scrat
         rm -rf ./scrat/.git
+        rm -rf ./shared_helpers
         git clone https://github.com/calebanderson/shared_helpers.git ./shared_helpers
         rm -rf ./shared_helpers/.git
+        rm -rf ./svg_analyzer
         git clone https://github.com/calebanderson/svg_analyzer.git ./svg_analyzer
         rm -rf ./svg_analyzer/.git
     - name: Commit update
